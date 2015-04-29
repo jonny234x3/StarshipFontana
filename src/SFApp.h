@@ -25,8 +25,11 @@ public:
   int     OnExecute();
   void    OnUpdateWorld();
   void    OnRender();
+  void    FireProjectileUp();
+  void    FireProjectileLeft();
+  void    FireProjectileDown();
+  void    FireProjectileRight();
 
-  void    FireProjectile();
 private:
   SDL_Surface           * surface;
   bool                    is_running;
@@ -35,12 +38,24 @@ private:
 
   shared_ptr<SFAsset>        player;
   shared_ptr<SFBoundingBox>  app_box;
-  list<shared_ptr<SFAsset> > projectiles;
+  list<shared_ptr<SFAsset> > projectilesup;
+  list<shared_ptr<SFAsset> > projectilesleft;
+  list<shared_ptr<SFAsset> > projectilesdown;
+  list<shared_ptr<SFAsset> > projectilesright;
   list<shared_ptr<SFAsset> > aliens;
-  list<shared_ptr<SFAsset> > coins;
+  list<shared_ptr<SFAsset> > walls;
+  list<shared_ptr<SFAsset> > diamondC;
+  list<shared_ptr<SFAsset> > rubyC;
+  list<shared_ptr<SFAsset> > emeraldC;
+  list<shared_ptr<SFAsset> > sapphireC;
+  list<shared_ptr<SFAsset> > endgames;
 
-  int fire;
-
+  int fire1;
+  int fire2;
+  int fire3;
+  int fire4;
+  int score = 0;
+  int collectable = 0;
   SFError OnInit();
 };
 #endif

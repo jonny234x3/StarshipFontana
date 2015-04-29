@@ -1,16 +1,20 @@
-# Starship Fontana #
-
+# Irwin the Treasure Hunter #
 This is an example C++ application using the SDL library.
 It tries to be as nicely C++11 as possible but do keep in
 mind that SDL is written in C and, at some stage, you have
 to interface with it.
 
 ## Story ##
-The evil b’Kuhn has stolen the code to Earth’s defence system.
-With this code he can, at any time, defeat the entire human race.
-Only one woman is brave enough to go after b’Kuhn. Will she be
-Earth’s hero? Puzzle your way though the universe in the company
-of Commander Fontana in **Starship Fontana**.
+Irwin is an energetic young explorer with only one thing on 
+his mind, treasure. He searches high and low for any piece of
+ancient hidden teasure to take for his collection. He was 
+sent to retrieve the secret gems of the Skull Catacombs.
+
+He has found himself lost down in the skeleton catacombs where
+magically animated skeletons are trying to prevent him from 
+stealing the jewels. He needs to retrieve the four gems and
+escape the catacombs. But be warned these tricky skeletons'
+posess the magic ability reanimate.
 
 ## Installation ##
 You will have to have the SDL development libraries installed on
@@ -28,6 +32,15 @@ top-level directory.  To execute this file do the following
  
 from the top-level directory.  The game will expect to find the
 `assets` directory under its current working directory.
+
+## How To Play ##
+Move the player with the arrow keys.
+To throw knives at enemies use "W,A,S,D".
+Killing enemies will add to you score but touching them will subtract 
+from your score and you'll have to start again.
+
+The objective is to collect all the gems without hitting any aliens
+for the highest score.
 
 ## Issues ##
 I think the SDL port has introduced some bounding box collision issues.
