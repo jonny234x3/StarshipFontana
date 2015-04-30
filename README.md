@@ -8,13 +8,13 @@ to interface with it.
 Irwin is an energetic young explorer with only one thing on 
 his mind, treasure. He searches high and low for any piece of
 ancient hidden teasure to take for his collection. He was 
-sent to retrieve the secret gems of the Skull Catacombs.
+sent to retrieve the secret gems hidden in the skeleton desert.
 
-He has found himself lost down in the skeleton catacombs where
+He has found himself lost deep within the skeleton desert where
 magically animated skeletons are trying to prevent him from 
-stealing the jewels. He needs to retrieve the four gems and
-escape the catacombs. But be warned these tricky skeletons'
-posess the magic ability reanimate.
+stealing the jewels. He needs to retrieve the four gems to destroy
+the skeleton magic. But be warned these tricky skeletons
+posess the magic ability teleport in and out of the caverns.
 
 ## Installation ##
 You will have to have the SDL development libraries installed on

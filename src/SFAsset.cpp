@@ -128,9 +128,7 @@ void SFAsset::GoWest() {
    if(!(c.getX()-12.0f < 0)) {
     bbox->centre.reset();
     bbox->centre = make_shared<Vector2>(c);
-   } else {
-    this->SetNotAlive();
-     }
+   } 
 }
 
   if(SFASSET_PROJECTILELEFT == type){
@@ -153,9 +151,7 @@ void SFAsset::GoEast() {
    if(!(c.getX()+12.0f > w)) {
     bbox->centre.reset();
     bbox->centre = make_shared<Vector2>(c);
-   } else {
-    this->SetNotAlive();
-     }
+   } 
   }
 
   if(SFASSET_PROJECTILERIGHT == type){
@@ -198,18 +194,16 @@ void SFAsset::GoSouth() {
   if(SFASSET_PLAYER == type){
   SDL_GetRendererOutputSize(sf_window->getRenderer(), &w, &h);
   Vector2 c = *(bbox->centre) + Vector2(0.0f, -7.0f);
-   if(!(c.getX()< 70.0f > w)) {
+   if(!(c.getY()< 70.0f )) {
     bbox->centre.reset();
     bbox->centre = make_shared<Vector2>(c);
-   } else {
-    this->SetNotAlive();
-     }
+   } 
   }
 
   if(SFASSET_PROJECTILEDOWN == type){
   SDL_GetRendererOutputSize(sf_window->getRenderer(), &w, &h);
   Vector2 c = *(bbox->centre) + Vector2(0.0f, -5.0f);
-  if(!(c.getY() < 70.0f)) {
+  if(!(c.getY() < 70.0f )) {
     bbox->centre.reset();
     bbox->centre = make_shared<Vector2>(c);
   } else {
@@ -251,7 +245,7 @@ void SFAsset::HandleCollision() {
 		SetNotAlive();
     }
 
-// Player Hit Alien - Then Respawn Player and Collectables
+// Player Hit Alien - Then Respawn Player
     if(SFASSET_PLAYER == type) {
 	int canvas_w, canvas_h;
 	SDL_GetRendererOutputSize(sf_window->getRenderer(), &canvas_w, &canvas_h);

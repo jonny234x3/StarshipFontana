@@ -1,6 +1,12 @@
 # LICENCE #
 
-The image assets used in this project are licenced under the CPL 1.0.
+The image assets used in this project are licenced as follows
+Asset sprites found from http://opengameart.org/
+Walls - edited "UI pack: RPG extension" By "Kenney" under the CC0 License
+Player - no edit "LPC Brunet Mustache" By "Nemisys" under the "CC-BY-SA 3.0"  & "GPL 3.0" Licenses
+Enemy - no edit "[LPC] Medieval fantasy character sprites" By "wulax" under the the "CC-BY-SA 3.0" & "GPL 3.0" Licenses
+Projectiles - edited "420 pixel art icons for medieval/fantasy RPG" By "Ails" under the the "CC-BY-SA 3.0" License
+Collectables - no edit "Gem Icons" By "Clint Bellanger" under the the "CC-BY-SA 3.0" & "GPL 3.0" Licenses
 
 The code in this project is demonstration code.  It is my intention that the
 code is in the public domain for whomever to use for whatever purpose.  This

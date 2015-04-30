@@ -277,9 +277,7 @@ void SFApp::OnUpdateWorld() {
 //Player to Wall Detect collision    
  for(auto w : walls) {
    if(player->CollidesWith(w)) {
-      auto pb = make_shared<SFAsset>(SFASSET_PLAYER, sf_window);
-      auto v = player->GetPosition();
-      pb->SetPosition(v);
+      player->HandleCollision();
      cout << "Player Hit Wall" << endl;
    }
   }
@@ -376,7 +374,7 @@ void SFApp::OnUpdateWorld() {
   emeraldC.clear();
   emeraldC = list<shared_ptr<SFAsset>>(tmpEmeraldC);
 
-// Remove destoried diamond (the long way)
+// Remove destoried sapphire (the long way)
   list<shared_ptr<SFAsset>> tmpSapphireC;
   for(auto s : sapphireC) {
     if(s->IsAlive()) {
